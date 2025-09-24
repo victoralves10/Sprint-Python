@@ -246,6 +246,7 @@ def gravar_json(_arquivo_json, _novo_dado: dict):
     # Salva de volta no json
     with open(_arquivo_json, 'w', encoding='utf-8') as f:
         json.dump(dados, f, indent=4, ensure_ascii=False)
+        input("Dados Registrados com sucesso!!\nEnter Para voltar pro menu...")
 
 
 
@@ -302,6 +303,7 @@ def excluir_registro(_arquivo_json: str) -> None:
                 with open(_arquivo_json, 'w', encoding='utf-8') as f:
                     json.dump(dados, f, indent=4, ensure_ascii=False)
                 input("Registro excluído com sucesso!\n\nPressione Enter para continuar...")
+                break
             else:
                 input("Exclusão cancelada.\n\nPressione Enter para continuar...")
         else:

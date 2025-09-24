@@ -899,38 +899,42 @@
     },
     "49": {
         "id_usuario": 49,
-        "nome": "José Eduardo",
-        "idade": 53,
+        "nome": "Napoleon BomnaParte",
+        "idade": 31,
         "sexo": "M",
-        "tipo_login": "gov",
+        "tipo_login": "etiqueta",
         "ajuda": {
-            "precisou": false
+            "precisou": true,
+            "momento": "depois login",
+            "problema": "agenda"
         },
         "especialidade": {
-            "especialidade": "urologia",
-            "sucesso": true
+            "especialidade": "oncologia",
+            "sucesso": false
         },
-        "satisfacao": 1,
-        "tempo_uso": 115,
-        "tempo_login": 1,
-        "absenteismo": false
+        "satisfacao": 2,
+        "tempo_uso": 60,
+        "tempo_login": 40,
+        "absenteismo": true
     },
     "50": {
         "id_usuario": 50,
-        "nome": "Lucia Santos",
-        "idade": 27,
-        "sexo": "F",
-        "tipo_login": "etiqueta",
+        "nome": "Jeferson da Silva",
+        "idade": 50,
+        "sexo": "M",
+        "tipo_login": "gov",
         "ajuda": {
-            "precisou": false
+            "precisou": true,
+            "momento": "depois login",
+            "problema": "agenda"
         },
         "especialidade": {
-            "especialidade": "nefrologia",
-            "sucesso": true
+            "especialidade": "oncologia",
+            "sucesso": false
         },
-        "satisfacao": 2,
-        "tempo_uso": 20,
-        "tempo_login": 2,
-        "absenteismo": false
+        "satisfacao": 1,
+        "tempo_uso": 40,
+        "tempo_login": 10,
+        "absenteismo": true
     }
 }

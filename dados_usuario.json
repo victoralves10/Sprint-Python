@@ -1,0 +1,936 @@
+{
+    "1": {
+        "id_usuario": 1,
+        "nome": "Victor Alves",
+        "idade": 19,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "cardiologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 1,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "2": {
+        "id_usuario": 2,
+        "nome": "Julia Martins Amaral",
+        "idade": 20,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": true,
+            "momento": "depois login",
+            "problema": "agenda"
+        },
+        "especialidade": {
+            "especialidade": "oncologia",
+            "sucesso": false
+        },
+        "satisfacao": 2,
+        "tempo_uso": 30,
+        "tempo_login": 2,
+        "absenteismo": true
+    },
+    "3": {
+        "id_usuario": 3,
+        "nome": "Pedro Henrique",
+        "idade": 45,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "pediatria",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 60,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "4": {
+        "id_usuario": 4,
+        "nome": "Ana Clara Santos",
+        "idade": 32,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": true,
+            "momento": "durante uso",
+            "problema": "relatorio"
+        },
+        "especialidade": {
+            "especialidade": "ortopedia",
+            "sucesso": false
+        },
+        "satisfacao": 3,
+        "tempo_uso": 15,
+        "tempo_login": 3,
+        "absenteismo": false
+    },
+    "5": {
+        "id_usuario": 5,
+        "nome": "Roberto Carlos Silva",
+        "idade": 58,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "dermatologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 120,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "6": {
+        "id_usuario": 6,
+        "nome": "Mariana Souza",
+        "idade": 28,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": true,
+            "momento": "depois login",
+            "problema": "perfil"
+        },
+        "especialidade": {
+            "especialidade": "oftalmologia",
+            "sucesso": true
+        },
+        "satisfacao": 2,
+        "tempo_uso": 45,
+        "tempo_login": 2,
+        "absenteismo": true
+    },
+    "7": {
+        "id_usuario": 7,
+        "nome": "Lucas Ferreira",
+        "idade": 35,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "neurologia",
+            "sucesso": false
+        },
+        "satisfacao": 4,
+        "tempo_uso": 5,
+        "tempo_login": 5,
+        "absenteismo": true
+    },
+    "8": {
+        "id_usuario": 8,
+        "nome": "Gabriela Alves",
+        "idade": 22,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "ginecologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 25,
+        "tempo_login": 2,
+        "absenteismo": false
+    },
+    "9": {
+        "id_usuario": 9,
+        "nome": "Eduardo Lima",
+        "idade": 50,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": true,
+            "momento": "depois login",
+            "problema": "prontuario"
+        },
+        "especialidade": {
+            "especialidade": "endocrinologia",
+            "sucesso": false
+        },
+        "satisfacao": 3,
+        "tempo_uso": 90,
+        "tempo_login": 3,
+        "absenteismo": false
+    },
+    "10": {
+        "id_usuario": 10,
+        "nome": "Patricia Oliveira",
+        "idade": 29,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "psiquiatria",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 10,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "11": {
+        "id_usuario": 11,
+        "nome": "Fernando Souza",
+        "idade": 48,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "gastroenterologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 75,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "12": {
+        "id_usuario": 12,
+        "nome": "Carla Vieira",
+        "idade": 38,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": true,
+            "momento": "durante uso",
+            "problema": "navegacao"
+        },
+        "especialidade": {
+            "especialidade": "reumatologia",
+            "sucesso": false
+        },
+        "satisfacao": 4,
+        "tempo_uso": 20,
+        "tempo_login": 4,
+        "absenteismo": true
+    },
+    "13": {
+        "id_usuario": 13,
+        "nome": "Thiago Mendes",
+        "idade": 24,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "urologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 5,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "14": {
+        "id_usuario": 14,
+        "nome": "Beatriz Costa",
+        "idade": 27,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "nefrologia",
+            "sucesso": true
+        },
+        "satisfacao": 2,
+        "tempo_uso": 40,
+        "tempo_login": 2,
+        "absenteismo": false
+    },
+    "15": {
+        "id_usuario": 15,
+        "nome": "Gustavo Santos",
+        "idade": 61,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": true,
+            "momento": "depois login",
+            "problema": "acesso dados"
+        },
+        "especialidade": {
+            "especialidade": "pneumologia",
+            "sucesso": false
+        },
+        "satisfacao": 5,
+        "tempo_uso": 80,
+        "tempo_login": 6,
+        "absenteismo": true
+    },
+    "16": {
+        "id_usuario": 16,
+        "nome": "Larissa Oliveira",
+        "idade": 30,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "hematologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 15,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "17": {
+        "id_usuario": 17,
+        "nome": "Felipe Gomes",
+        "idade": 37,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "infectologia",
+            "sucesso": true
+        },
+        "satisfacao": 2,
+        "tempo_uso": 55,
+        "tempo_login": 2,
+        "absenteismo": false
+    },
+    "18": {
+        "id_usuario": 18,
+        "nome": "Sofia Dias",
+        "idade": 25,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": true,
+            "momento": "durante uso",
+            "problema": "interface"
+        },
+        "especialidade": {
+            "especialidade": "endocrinologia",
+            "sucesso": false
+        },
+        "satisfacao": 3,
+        "tempo_uso": 10,
+        "tempo_login": 3,
+        "absenteismo": true
+    },
+    "19": {
+        "id_usuario": 19,
+        "nome": "Guilherme Martins",
+        "idade": 52,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "psiquiatria",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 100,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "20": {
+        "id_usuario": 20,
+        "nome": "Bruna Rodrigues",
+        "idade": 41,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "cardiologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 70,
+        "tempo_login": 2,
+        "absenteismo": false
+    },
+    "21": {
+        "id_usuario": 21,
+        "nome": "Daniel Costa",
+        "idade": 29,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": true,
+            "momento": "durante uso",
+            "problema": "relatorio"
+        },
+        "especialidade": {
+            "especialidade": "urologia",
+            "sucesso": false
+        },
+        "satisfacao": 4,
+        "tempo_uso": 30,
+        "tempo_login": 5,
+        "absenteismo": true
+    },
+    "22": {
+        "id_usuario": 22,
+        "nome": "Isabela Lima",
+        "idade": 23,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "pediatria",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 5,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "23": {
+        "id_usuario": 23,
+        "nome": "Alexandre Castro",
+        "idade": 65,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "neurologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 150,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "24": {
+        "id_usuario": 24,
+        "nome": "Camila Fernandes",
+        "idade": 34,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": true,
+            "momento": "depois login",
+            "problema": "agendamento"
+        },
+        "especialidade": {
+            "especialidade": "ginecologia",
+            "sucesso": false
+        },
+        "satisfacao": 3,
+        "tempo_uso": 40,
+        "tempo_login": 3,
+        "absenteismo": true
+    },
+    "25": {
+        "id_usuario": 25,
+        "nome": "Gabriel Pinto",
+        "idade": 46,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "dermatologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 95,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "26": {
+        "id_usuario": 26,
+        "nome": "Rafaela Santos",
+        "idade": 26,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": true,
+            "momento": "durante uso",
+            "problema": "lento"
+        },
+        "especialidade": {
+            "especialidade": "oncologia",
+            "sucesso": false
+        },
+        "satisfacao": 5,
+        "tempo_uso": 10,
+        "tempo_login": 6,
+        "absenteismo": true
+    },
+    "27": {
+        "id_usuario": 27,
+        "nome": "Bruno Oliveira",
+        "idade": 39,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "oftalmologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 60,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "28": {
+        "id_usuario": 28,
+        "nome": "Fernanda Gomes",
+        "idade": 31,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "ortopedia",
+            "sucesso": true
+        },
+        "satisfacao": 2,
+        "tempo_uso": 25,
+        "tempo_login": 2,
+        "absenteismo": false
+    },
+    "29": {
+        "id_usuario": 29,
+        "nome": "Rodrigo Silva",
+        "idade": 55,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": true,
+            "momento": "depois login",
+            "problema": "prontuario"
+        },
+        "especialidade": {
+            "especialidade": "gastroenterologia",
+            "sucesso": false
+        },
+        "satisfacao": 4,
+        "tempo_uso": 85,
+        "tempo_login": 4,
+        "absenteismo": false
+    },
+    "30": {
+        "id_usuario": 30,
+        "nome": "Juliana Santos",
+        "idade": 21,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "reumatologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 15,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "31": {
+        "id_usuario": 31,
+        "nome": "Leonardo Pereira",
+        "idade": 44,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "urologia",
+            "sucesso": true
+        },
+        "satisfacao": 2,
+        "tempo_uso": 70,
+        "tempo_login": 2,
+        "absenteismo": false
+    },
+    "32": {
+        "id_usuario": 32,
+        "nome": "Bianca Ferreira",
+        "idade": 36,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": true,
+            "momento": "durante uso",
+            "problema": "interface"
+        },
+        "especialidade": {
+            "especialidade": "nefrologia",
+            "sucesso": false
+        },
+        "satisfacao": 3,
+        "tempo_uso": 50,
+        "tempo_login": 3,
+        "absenteismo": true
+    },
+    "33": {
+        "id_usuario": 33,
+        "nome": "Henrique Soares",
+        "idade": 59,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "pneumologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 110,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "34": {
+        "id_usuario": 34,
+        "nome": "Laura Carvalho",
+        "idade": 28,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "hematologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 20,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "35": {
+        "id_usuario": 35,
+        "nome": "Marcelo Mendes",
+        "idade": 51,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": true,
+            "momento": "depois login",
+            "problema": "relatorio"
+        },
+        "especialidade": {
+            "especialidade": "infectologia",
+            "sucesso": false
+        },
+        "satisfacao": 5,
+        "tempo_uso": 90,
+        "tempo_login": 5,
+        "absenteismo": true
+    },
+    "36": {
+        "id_usuario": 36,
+        "nome": "Vitória Ramos",
+        "idade": 33,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "endocrinologia",
+            "sucesso": true
+        },
+        "satisfacao": 2,
+        "tempo_uso": 35,
+        "tempo_login": 2,
+        "absenteismo": false
+    },
+    "37": {
+        "id_usuario": 37,
+        "nome": "Diego Almeida",
+        "idade": 47,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "psiquiatria",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 85,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "38": {
+        "id_usuario": 38,
+        "nome": "Amanda Pires",
+        "idade": 24,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": true,
+            "momento": "durante uso",
+            "problema": "interface"
+        },
+        "especialidade": {
+            "especialidade": "cardiologia",
+            "sucesso": false
+        },
+        "satisfacao": 4,
+        "tempo_uso": 10,
+        "tempo_login": 4,
+        "absenteismo": true
+    },
+    "39": {
+        "id_usuario": 39,
+        "nome": "Lucas Martins",
+        "idade": 60,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "urologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 130,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "40": {
+        "id_usuario": 40,
+        "nome": "Ana Oliveira",
+        "idade": 30,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "pediatria",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 20,
+        "tempo_login": 2,
+        "absenteismo": false
+    },
+    "41": {
+        "id_usuario": 41,
+        "nome": "Caique Mendes",
+        "idade": 29,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "neurologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 30,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "42": {
+        "id_usuario": 42,
+        "nome": "Luiza Silva",
+        "idade": 25,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": true,
+            "momento": "depois login",
+            "problema": "login"
+        },
+        "especialidade": {
+            "especialidade": "ginecologia",
+            "sucesso": false
+        },
+        "satisfacao": 5,
+        "tempo_uso": 15,
+        "tempo_login": 6,
+        "absenteismo": true
+    },
+    "43": {
+        "id_usuario": 43,
+        "nome": "Marcos Ribeiro",
+        "idade": 54,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "dermatologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 100,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "44": {
+        "id_usuario": 44,
+        "nome": "Juliana Santos",
+        "idade": 38,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "oncologia",
+            "sucesso": true
+        },
+        "satisfacao": 2,
+        "tempo_uso": 55,
+        "tempo_login": 2,
+        "absenteismo": false
+    },
+    "45": {
+        "id_usuario": 45,
+        "nome": "Carlos Roberto",
+        "idade": 49,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": true,
+            "momento": "durante uso",
+            "problema": "relatorio"
+        },
+        "especialidade": {
+            "especialidade": "oftalmologia",
+            "sucesso": false
+        },
+        "satisfacao": 3,
+        "tempo_uso": 75,
+        "tempo_login": 3,
+        "absenteismo": false
+    },
+    "46": {
+        "id_usuario": 46,
+        "nome": "Fabiana Costa",
+        "idade": 23,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "ortopedia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 5,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "47": {
+        "id_usuario": 47,
+        "nome": "Pedro Diniz",
+        "idade": 62,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "gastroenterologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 140,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "48": {
+        "id_usuario": 48,
+        "nome": "Mariana Alves",
+        "idade": 35,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": true,
+            "momento": "depois login",
+            "problema": "agenda"
+        },
+        "especialidade": {
+            "especialidade": "reumatologia",
+            "sucesso": false
+        },
+        "satisfacao": 4,
+        "tempo_uso": 30,
+        "tempo_login": 4,
+        "absenteismo": true
+    },
+    "49": {
+        "id_usuario": 49,
+        "nome": "José Eduardo",
+        "idade": 53,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "urologia",
+            "sucesso": true
+        },
+        "satisfacao": 1,
+        "tempo_uso": 115,
+        "tempo_login": 1,
+        "absenteismo": false
+    },
+    "50": {
+        "id_usuario": 50,
+        "nome": "Lucia Santos",
+        "idade": 27,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "nefrologia",
+            "sucesso": true
+        },
+        "satisfacao": 2,
+        "tempo_uso": 20,
+        "tempo_login": 2,
+        "absenteismo": false
+    }
+}

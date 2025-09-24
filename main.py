@@ -5,8 +5,8 @@ def limpa_tela() -> None:
     os.system("cls" if os.name == "nt" else "clear")
 
 
-def separacao() -> str:
-    print(f"\n {"-" * 35}\n")
+def separacao(_simbolo: str, _qtd: int) -> None:
+    print(f"{_simbolo * _qtd}")
 
 def imprime_titulo(titulo: str, largura: int) -> None:
     print("=-" * largura)
@@ -229,7 +229,7 @@ def solicita_dados_dict() -> dict:
     return {id_str: dados}
 
 #---------- Gravar Dados JSON ----------
-def grava_json(_arquivo_json, _novo_dado: dict):
+def gravar_json(_arquivo_json, _novo_dado: dict):
     # Lê os dados atual se o arquivo existir
     if os.path.exists(_arquivo_json):
         with open(_arquivo_json, 'r', encoding='utf-8') as f:
@@ -247,11 +247,73 @@ def grava_json(_arquivo_json, _novo_dado: dict):
     with open(_arquivo_json, 'w', encoding='utf-8') as f:
         json.dump(dados, f, indent=4, ensure_ascii=False)
 
+
+
+def imprimir_dados(dados, espaco='') -> None:
+    for k, v in dados.items():
+        print(f"{espaco}{k}:", end=' ')
+        if isinstance(v, dict):
+            print()
+            imprimir_dados(v, espaco + '  ')
+        else:
+            print(v)
+
+
+def excluir_registro(_arquivo_json: str) -> None:
+    while True:
+        # Lê os dados 
+        if os.path.exists(_arquivo_json): # verifica se existe
+            with open(_arquivo_json, 'r', encoding='utf-8') as f:
+                try:
+                    dados = json.load(f)
+                except json.JSONDecodeError:
+                    input("Arquivo corrompido.\n\nPressione Enter para continuar...")
+                    return
+        else:
+            input("Não há registros para excluir.\n\nPressione Enter para continuar...")
+            return
+
+        if not dados:
+            input("Não há registros para excluir.\n\nPressione Enter para continuar...")
+            return
+
+        print("Registros disponíveis:\n")
+        print("ID           | NOME")
+        separacao("=-", 26)
+        for k, v in dados.items():
+            print(f"{k:12} | {v.get('nome','')}")
+
+        print("\n0. Cancelar e sair.")
+
+        # Solicita o ID para ircluir
+        id_para_excluir = str(solicita_numero("\nDigite o ID do usuário a ser excluído: "))
+
+        if id_para_excluir == "0":
+            break  # Volta ao menu
+
+        if id_para_excluir in dados:
+            print()
+            imprimir_dados(dados[id_para_excluir])
+
+            confirmacao = resposta_sim_nao(f"\nDeseja excluir cadastro do usuário {dados[id_para_excluir].get('nome')}? [S/N]: ")
+            if confirmacao: # Se for true
+                del dados[id_para_excluir]
+                # Salva os dados atualizado
+                with open(_arquivo_json, 'w', encoding='utf-8') as f:
+                    json.dump(dados, f, indent=4, ensure_ascii=False)
+                input("Registro excluído com sucesso!\n\nPressione Enter para continuar...")
+            else:
+                input("Exclusão cancelada.\n\nPressione Enter para continuar...")
+        else:
+            input("\nID não encontrado.\n\nPressione Enter para continuar...")
+            break
+
+
 def menu_dashboard() -> None:
     dados_usuario = {}
     arquivo = "dados_usuario.json"
     while True:
-        limpa_tela
+        limpa_tela()
         imprime_titulo("MENU DASHBOARD", 30)
         print()
 
@@ -267,7 +329,11 @@ def menu_dashboard() -> None:
             case 1:
                 limpa_tela()
                 dados_usuario = solicita_dados_dict()
-                grava_json(arquivo, dados_usuario)
+                gravar_json(arquivo, dados_usuario)
+
+            case 4:
+                limpa_tela()
+                excluir_registro(arquivo)
             case 0:
                 print("Encerrando programa...")
                 break

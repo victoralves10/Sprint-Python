@@ -1,98 +1,26 @@
 {
     "1": {
-        "nome": "Ana Silva",
-        "idade": 28,
-        "sexo": "F",
-        "tipo_login": "gov",
-        "ajuda": {
-            "precisou": true,
-            "momento": "antes login",
-            "problema": "login"
-        },
-        "especialidade": {
-            "especialidade": "cardiologia",
-            "sucesso": true
-        },
-        "satisfacao": 4,
-        "tempo_uso": 35,
-        "tempo_login": 10,
-        "absenteismo": false
-    },
-    "2": {
-        "nome": "Bruno Souza",
-        "idade": 34,
+        "id_usuario": 1,
+        "nome": "Victor Alves Lopes",
+        "idade": 20,
         "sexo": "M",
         "tipo_login": "etiqueta",
-        "ajuda": {
-            "precisou": false
-        },
-        "especialidade": {
-            "especialidade": "neurologia",
-            "sucesso": true
-        },
-        "satisfacao": 5,
-        "tempo_uso": 50,
-        "tempo_login": 15,
-        "absenteismo": false
-    },
-    "3": {
-        "nome": "Carla Pereira",
-        "idade": 42,
-        "sexo": "F",
-        "tipo_login": "gov",
         "ajuda": {
             "precisou": true,
             "momento": "depois login",
-            "problema": "consulta"
+            "problema": "login"
         },
-        "especialidade": {
-            "especialidade": "oncologia",
-            "sucesso": false
-        },
+        "especialidade": "neurologia",
+        "sucesso": false,
         "satisfacao": 3,
-        "tempo_uso": 40,
-        "tempo_login": 12,
+        "tempo_uso": 30,
+        "tempo_login": 10,
         "absenteismo": true
     },
-    "4": {
-        "nome": "Daniel Costa",
-        "idade": 30,
-        "sexo": "M",
-        "tipo_login": "gov",
-        "ajuda": {
-            "precisou": true,
-            "momento": "antes login",
-            "problema": "agenda"
-        },
-        "especialidade": {
-            "especialidade": "ortopedia",
-            "sucesso": true
-        },
-        "satisfacao": 4,
-        "tempo_uso": 45,
-        "tempo_login": 20,
-        "absenteismo": false
-    },
-    "5": {
-        "nome": "Elisa Martins",
-        "idade": 26,
-        "sexo": "F",
-        "tipo_login": "etiqueta",
-        "ajuda": {
-            "precisou": false
-        },
-        "especialidade": {
-            "especialidade": "cardiologia",
-            "sucesso": true
-        },
-        "satisfacao": 5,
-        "tempo_uso": 30,
-        "tempo_login": 8,
-        "absenteismo": false
-    },
-    "6": {
-        "nome": "Fernando Lima",
-        "idade": 38,
+    "2": {
+        "id_usuario": 2,
+        "nome": "Emily Silveira",
+        "idade": 10,
         "sexo": "M",
         "tipo_login": "gov",
         "ajuda": {
@@ -101,102 +29,12 @@
             "problema": "outros"
         },
         "especialidade": {
-            "especialidade": "neurologia",
-            "sucesso": false
-        },
-        "satisfacao": 2,
-        "tempo_uso": 60,
-        "tempo_login": 25,
-        "absenteismo": true
-    },
-    "7": {
-        "nome": "Gabriela Rocha",
-        "idade": 29,
-        "sexo": "F",
-        "tipo_login": "etiqueta",
-        "ajuda": {
-            "precisou": true,
-            "momento": "antes login",
-            "problema": "login"
-        },
-        "especialidade": {
-            "especialidade": "oncologia",
-            "sucesso": true
-        },
-        "satisfacao": 4,
-        "tempo_uso": 55,
-        "tempo_login": 18,
-        "absenteismo": false
-    },
-    "8": {
-        "nome": "Hugo Almeida",
-        "idade": 33,
-        "sexo": "M",
-        "tipo_login": "gov",
-        "ajuda": {
-            "precisou": false
-        },
-        "especialidade": {
-            "especialidade": "ortopedia",
-            "sucesso": true
-        },
-        "satisfacao": 5,
-        "tempo_uso": 48,
-        "tempo_login": 14,
-        "absenteismo": false
-    },
-    "9": {
-        "nome": "Isabela Fernandes",
-        "idade": 31,
-        "sexo": "F",
-        "tipo_login": "gov",
-        "ajuda": {
-            "precisou": true,
-            "momento": "depois login",
-            "problema": "consulta"
-        },
-        "especialidade": {
             "especialidade": "cardiologia",
-            "sucesso": false
-        },
-        "satisfacao": 3,
-        "tempo_uso": 35,
-        "tempo_login": 10,
-        "absenteismo": true
-    },
-    "10": {
-        "nome": "João Carvalho",
-        "idade": 40,
-        "sexo": "M",
-        "tipo_login": "etiqueta",
-        "ajuda": {
-            "precisou": true,
-            "momento": "antes login",
-            "problema": "agenda"
-        },
-        "especialidade": {
-            "especialidade": "neurologia",
             "sucesso": true
         },
-        "satisfacao": 4,
-        "tempo_uso": 42,
-        "tempo_login": 12,
-        "absenteismo": false
-    },
-    "11": {
-        "nome": "Victor Alves Lopes",
-        "idade": 20,
-        "sexo": "M",
-        "tipo_login": "etiqueta",
-        "ajuda": {
-            "precisou": true,
-            "momento": "depois",
-            "problema": "dúvida"
-        },
-        "especialidade": "neurologia",
         "satisfacao": 2,
-        "tempo_uso": 110,
-        "tempo_login": 10,
-        "absenteismo": true
+        "tempo_uso": 10,
+        "tempo_login": 20,
+        "absenteismo": false
     }
 }

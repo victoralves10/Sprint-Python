@@ -328,15 +328,15 @@ def formata_metricas_para_dashboard(metricas: dict, dados_brutos: dict) -> dict:
         "sucesso": f"[ {metricas['taxa_sucesso']}% ]",
         "satisfacao": f"[ {metricas['satisfacao_media']} / 5.0 ]",
         "tempo_login": f"[ {metricas['tempo_medio_login']} min ]",
-        "tempo_uso": f"[ {metricas['tempo_medio_uso']} min ]",
+        "tempo_uso": f" [ {metricas['tempo_medio_uso']} min ]",
         "total_usuarios": f"[ {metricas['total_usuarios']} ]",
-        "absenteismo": f"[ {metricas['taxa_absenteismo']}% ]",
+        "absenteismo": f" [ {metricas['taxa_absenteismo']}% ]",
         
         # Demografia e Login
         "genero_f": f"[ {metricas['genero_f_pct']}% ]",
         "genero_m": f"[ {metricas['genero_m_pct']}% ]",
         "login_gov": f"[ {metricas['login_gov_pct']}% ]",
-        "login_etiqueta": f"[ {metricas['login_etiqueta_pct']}% ]",
+        "login_etiqueta": f" [ {metricas['login_etiqueta_pct']}% ]",
         
         # Ajuda e Erros
         "ajuda_pct": f"[ {metricas['taxa_ajuda']}% ]",
@@ -373,12 +373,11 @@ def imprime_dashboard(metricas_formatadas: dict) -> None:
     # larguras fixas para alinhamento
     largura_campo = 20
     largura_valor = 15
-    largura_total = 90
 
     imprime_titulo_centralizado("Dashboard de Dados Registrados", 40)
 
     print("\n\n\n----- Métricas Gerais -----")
-    imprime_par_alinhado("\nTaxa de Sucesso", metricas_formatadas['sucesso'], largura_campo, largura_valor, 
+    imprime_par_alinhado("\nTaxa de Sucesso", metricas_formatadas['sucesso'], largura_campo+1, largura_valor, 
                          "Satisfação Média", metricas_formatadas['satisfacao'])
     imprime_par_alinhado("Tempo Médio Login", metricas_formatadas['tempo_login'], largura_campo, largura_valor, 
                          "Tempo Médio Uso", metricas_formatadas['tempo_uso'])
@@ -386,7 +385,7 @@ def imprime_dashboard(metricas_formatadas: dict) -> None:
                          "Taxa de Absenteísmo", metricas_formatadas['absenteismo'])
 
     print("\n\n\n----- Demografia e Login -----")
-    imprime_par_alinhado("\nGênero Feminino (F)", metricas_formatadas['genero_f'], largura_campo, largura_valor, 
+    imprime_par_alinhado("\nGênero Feminino (F)", metricas_formatadas['genero_f'], largura_campo + 1, largura_valor, 
                          "Gênero Masculino (M)", metricas_formatadas['genero_m'])
     imprime_par_alinhado("Login Gov", metricas_formatadas['login_gov'], largura_campo, largura_valor, 
                          "Login Etiqueta", metricas_formatadas['login_etiqueta'])
@@ -410,7 +409,7 @@ def imprime_dashboard(metricas_formatadas: dict) -> None:
             linha += f" |    - {p2:<{largura_problema}} {v2:<9}"
         print(linha)
 
-    print("\n----- Desempenho por Especialidade -----\n")
+    print("\n\n\n----- Desempenho por Especialidade -----\n")
     
     # tabela de especialidades
     largura_col_esp = 25
@@ -418,13 +417,14 @@ def imprime_dashboard(metricas_formatadas: dict) -> None:
     largura_col_suc = 16
     
     print(f"{'Especialidade':<{largura_col_esp}} | {'Volume':<{largura_col_vol}} | {'Taxa de Sucesso':<{largura_col_suc}}")
-    print("-" * (largura_col_esp+1) + "|" + "-" * (largura_col_vol+1) + "|" + "-" * (largura_col_suc+1))
+    print("-" * (largura_col_esp+1) + "|" + "-" * (largura_col_vol+2) + "|" + "-" * (largura_col_suc+1))
     
     for esp, data in metricas_formatadas["especialidades"].items():
         print(f"{esp:<{largura_col_esp}} | {data['volume']:<{largura_col_vol}} | {data['taxa']:<{largura_col_suc}}")
     
-    print("\n" + "=" * largura_total + "\n")
-    input("Pressione Enter para voltar ao menu...")
+    print()
+    imprime_linha_separadora("=-", 45)
+    input("\nPressione Enter para voltar ao menu...")
 
 
 def mostra_dashboard(nome_arquivo: str):
@@ -476,6 +476,9 @@ def exibe_registro_detalhado(id_usuario: str, dados_usuario: dict, numerado: boo
     # Especialidade
     linhas.append(("--- Especialidade ---", ""))
     especialidade = dados_usuario.get("especialidade", {})
+
+    if isinstance(especialidade, str):
+        especialidade = {"especialidade": especialidade, "sucesso": False}
     linhas.append(("Especialidade:", especialidade.get("especialidade", "-").capitalize()))
     linhas.append(("Sucesso:", str(especialidade.get("sucesso", False)).capitalize()))
 
@@ -506,7 +509,7 @@ def remove_registro(nome_arquivo: str):
         return
 
     print("Registros disponíveis:\n")
-    print("ID            | NOME")
+    print("ID           | NOME")
     imprime_linha_separadora("=-", 26)
     for k, v in dados.items():
         print(f"{k:12} | {v.get('nome','')}")
@@ -592,8 +595,8 @@ def edita_registro(nome_arquivo: str):
                     mensagem = " 1 -> Antes do login\n 2 -> Depois do login\nEscolha: "
                     opc = pede_opcao_intervalo(mensagem, 1, 2)
                     usuario["ajuda"]["momento"] = "antes login" if opc == 1 else "depois login"
-                else:
-                    input("O usuário não precisou de ajuda. Pressione Enter para continuar...")
+ #               else:
+  #                  input("O usuário não precisou de ajuda. Pressione Enter para continuar...")
             case 8:  # Problema
                 if usuario["ajuda"].get("precisou", False):
                     mensagem = " 1 -> Login\n 2 -> Consulta\n 3 -> Agenda\n 4 -> Outros\nEscolha: "
@@ -659,5 +662,5 @@ while True:
             limpa_tela()
             remove_registro(arquivo)
         case 0:
-            print("Encerrando programa...")
+            print("\nEncerrando programa...")
             break

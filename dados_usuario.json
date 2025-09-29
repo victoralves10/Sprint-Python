@@ -25,8 +25,8 @@
         "tipo_login": "gov",
         "ajuda": {
             "precisou": true,
-            "momento": "depois login",
-            "problema": "outros"
+            "momento": "antes login",
+            "problema": "agenda"
         },
         "especialidade": {
             "especialidade": "cardiologia",

@@ -251,7 +251,7 @@ def calcula_metricas(dados: dict) -> dict:
 
         # Ajuda e Problemas
         ajuda = usuario.get("ajuda", {})
-        if ajuda.get("precisou", False):
+        if ajuda.get("precisou", False) and "problema" in ajuda:
             ajuda_total += 1
             momento = ajuda.get("momento")
             if momento == "antes login":
@@ -280,7 +280,7 @@ def calcula_metricas(dados: dict) -> dict:
     "ajuda_antes_pct": round((ajuda_antes / ajuda_total) * 100) if ajuda_total else 0,  
     "ajuda_depois_pct": round((ajuda_depois / ajuda_total) * 100) if ajuda_total else 0,
     
-    "problemas_pct": {k: round((v / total_usuarios) * 100) for k, v in problemas.items()},
+    "problemas_pct": {k: round((v / ajuda_total) * 100) for k, v in problemas.items()},
     }
     
     return metricas

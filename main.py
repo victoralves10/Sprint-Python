@@ -237,9 +237,14 @@ def calcula_metricas(dados: dict) -> dict:
         soma_tempo_login += usuario.get("tempo_login", 0)
         # Soma os valores de cada usuário, usando 0 como padrão caso o dado não exista.
         
-        # Sucesso do usuário (considera o campo 'sucesso' coletado diretamente)
-        if usuario.get("sucesso", False):
+        # Sucesso
+        esp_data = usuario.get("especialidade", {})
+        if isinstance(esp_data, dict) and esp_data.get("sucesso", False):
             total_sucesso += 1
+
+        # Absenteísmo
+        if usuario.get("absenteismo", False):
+            total_absenteismo += 1
 
         # Gênero e Login
         sexo = usuario.get("sexo", "").upper()
@@ -286,7 +291,7 @@ def calcula_metricas(dados: dict) -> dict:
     return metricas
 
 
-# ----------------- FORMATAÇÃO (PREPARAÇÃO DE EXIBIÇÃO) -----------------           REVISAR
+# ----------------- FORMATAÇÃO (PREPARAÇÃO DE EXIBIÇÃO) -----------------
 
 def formata_metricas_para_dashboard(metricas: dict, dados_brutos: dict) -> dict:
     # Formata os valores numéricos das metricas em strings para impressão.
@@ -427,7 +432,7 @@ def imprime_dashboard(metricas_formatadas: dict) -> None:
     input("\nPressione Enter para voltar ao menu...")
 
 
-def mostra_dashboard(nome_arquivo: str):
+def mostra_dashboard(nome_arquivo: str) -> None:
     # Comanda o cálculo, a formatação e a impressão do Dashboard.
     dados_brutos = carrega_dados_json(nome_arquivo)
     
@@ -453,7 +458,7 @@ def mostra_dashboard(nome_arquivo: str):
 
 # ----------------- REMOÇÃO E ADIÇÃO -----------------
 
-def exibe_registro_detalhado(id_usuario: str, dados_usuario: dict, numerado: bool = False):
+def exibe_registro_detalhado(id_usuario: str, dados_usuario: dict, numerado: bool = False)-> None:
     # Exibe os dados detalhados de um único usuário.
     largura = 20
     linhas = []
@@ -541,8 +546,8 @@ def remove_registro(nome_arquivo: str):
     else:
         input("\nID não encontrado.\nPressione Enter para continuar...")
 
-def edita_registro(nome_arquivo: str):
-    """Permite editar campos de um registro existente."""
+def edita_registro(nome_arquivo: str)-> None:
+    #Permite editar campos de um registro existente.
     dados = carrega_dados_json(nome_arquivo)
 
     if not dados:
@@ -595,8 +600,6 @@ def edita_registro(nome_arquivo: str):
                     mensagem = " 1 -> Antes do login\n 2 -> Depois do login\nEscolha: "
                     opc = pede_opcao_intervalo(mensagem, 1, 2)
                     usuario["ajuda"]["momento"] = "antes login" if opc == 1 else "depois login"
- #               else:
-  #                  input("O usuário não precisou de ajuda. Pressione Enter para continuar...")
             case 8:  # Problema
                 if usuario["ajuda"].get("precisou", False):
                     mensagem = " 1 -> Login\n 2 -> Consulta\n 3 -> Agenda\n 4 -> Outros\nEscolha: "

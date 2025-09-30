@@ -1,24 +1,86 @@
 {
     "1": {
         "id_usuario": 1,
-        "nome": "Victor Alves Lopes",
-        "idade": 20,
+        "nome": "Son Goku",
+        "idade": 19,
         "sexo": "M",
-        "tipo_login": "etiqueta",
+        "tipo_login": "gov",
         "ajuda": {
-            "precisou": true
+            "precisou": true,
+            "momento": "antes login",
+            "problema": "login"
         },
-        "especialidade": "neurologia",
-        "sucesso": false,
+        "especialidade": {
+            "especialidade": "cardiologia",
+            "sucesso": false
+        },
         "satisfacao": 3,
-        "tempo_uso": 30,
-        "tempo_login": 10,
+        "tempo_uso": 40,
+        "tempo_login": 3,
         "absenteismo": true
     },
     "2": {
         "id_usuario": 2,
-        "nome": "Emily Silveira",
-        "idade": 10,
+        "nome": "Vegeta Quatro",
+        "idade": 20,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": true,
+            "momento": "depois login",
+            "problema": "consulta"
+        },
+        "especialidade": {
+            "especialidade": "neurologia",
+            "sucesso": true
+        },
+        "satisfacao": 4,
+        "tempo_uso": 56,
+        "tempo_login": 4,
+        "absenteismo": false
+    },
+    "3": {
+        "id_usuario": 3,
+        "nome": "Piccolo Jr",
+        "idade": 30,
+        "sexo": "M",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": false
+        },
+        "especialidade": {
+            "especialidade": "oncologia",
+            "sucesso": true
+        },
+        "satisfacao": 2,
+        "tempo_uso": 30,
+        "tempo_login": 10,
+        "absenteismo": false
+    },
+    "4": {
+        "id_usuario": 4,
+        "nome": "Neymar da Silva Santos Júnior",
+        "idade": 30,
+        "sexo": "F",
+        "tipo_login": "gov",
+        "ajuda": {
+            "precisou": true,
+            "momento": "depois login",
+            "problema": "outros"
+        },
+        "especialidade": {
+            "especialidade": "neurologia",
+            "sucesso": true
+        },
+        "satisfacao": 5,
+        "tempo_uso": 50,
+        "tempo_login": 1,
+        "absenteismo": true
+    },
+    "5": {
+        "id_usuario": 5,
+        "nome": "Madara Uchiha",
+        "idade": 50,
         "sexo": "M",
         "tipo_login": "gov",
         "ajuda": {
@@ -27,12 +89,32 @@
             "problema": "agenda"
         },
         "especialidade": {
-            "especialidade": "cardiologia",
-            "sucesso": true
+            "especialidade": "oncologia",
+            "sucesso": false
         },
-        "satisfacao": 2,
-        "tempo_uso": 10,
+        "satisfacao": 1,
+        "tempo_uso": 40,
+        "tempo_login": 40,
+        "absenteismo": true
+    },
+    "6": {
+        "id_usuario": 6,
+        "nome": "Craque Neto",
+        "idade": 71,
+        "sexo": "F",
+        "tipo_login": "etiqueta",
+        "ajuda": {
+            "precisou": true,
+            "momento": "depois login",
+            "problema": "outros"
+        },
+        "especialidade": {
+            "especialidade": "ortopedia",
+            "sucesso": false
+        },
+        "satisfacao": 1,
+        "tempo_uso": 110,
         "tempo_login": 20,
-        "absenteismo": false
+        "absenteismo": true
     }
 }
